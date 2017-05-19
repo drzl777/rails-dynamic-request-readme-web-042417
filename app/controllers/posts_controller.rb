@@ -1,7 +1,5 @@
-class Post < ActiveRecord::Base
-
+class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
   end
-
 end
